@@ -1,0 +1,15 @@
+{
+  "name": "huguestennier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":
+      "sass --watch themes/huguestennier/src/css:themes/huguestennier/static/css",
+    "build":
+      "sass themes/huguestennier/src/css/theme.scss:themes/huguestennier/static/css/theme.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC"
+}

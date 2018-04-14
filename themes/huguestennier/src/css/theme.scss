@@ -1,0 +1,53 @@
+body {
+  padding: 0 15%;
+}
+
+h1 {
+  font-family: 'gilroyextrabold';
+  font-size: 100px;
+}
+
+p {
+  max-width: 650px;
+  margin: 2em auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+h2 {
+  max-width: 650px;
+  font-family: 'gilroyextrabold';
+  font-size: 40px;
+  margin: 4rem auto;
+}
+
+@font-face {
+  font-family: 'gilroyextrabold';
+  src: url('/fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+  url('/fonts/gilroy-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav {
+  font-family: 'gilroyextrabold';
+  font-size: 16px;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.header-nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: #000;
+}
