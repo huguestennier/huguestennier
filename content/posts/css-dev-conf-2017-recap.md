@@ -1,5 +1,5 @@
 ---
-title: "Web accessibility is crucial : How to get started now!"
+title: "Accessibilité : 5 petites victoires à appliquer maintenant"
 draft: true
 ---
 
