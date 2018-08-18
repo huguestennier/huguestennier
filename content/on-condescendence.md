@@ -3,7 +3,7 @@ title: "On Condescendence"
 date: 2018-08-17T15:45:11-04:00
 tags:
 - life
-draft: false
+draft: true
 type: "article"
 ---
 
