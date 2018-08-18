@@ -2,6 +2,26 @@
 
 @import 'variables';
 
+
+//// Breakpoints
+// Usage : @include breakpoint(xs)
+$breakpoints: (
+	xs: 480px,
+	sm: 768px,
+	md: 1024px,
+	lg: 1200px,
+);
+
+// Get breakpoint function
+// Usage - @include breakpoint(xs) { ... }
+@mixin breakpoint($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+			@content;
+		}
+	}
+}
+
 @font-face {
   font-family: 'gilroyextrabold';
   src: url('/fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
@@ -12,8 +32,11 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 2.5rem;
 
+  @include breakpoint(md) {
+    padding: 0;
+  }
 }
 
 
@@ -91,10 +114,14 @@ footer {
 
 h1 {
   font-family: 'gilroyextrabold';
-  font-size: 6rem;
+  font-size: 3rem;
   grid-column-start: 2;
   grid-row-start: 2;
   z-index: 2;
+
+  @include breakpoint(md) {
+    font-size: 6rem;
+  }
 
   .ht-article-template & {
     color: #fff;
@@ -111,15 +138,23 @@ h1 {
 p, ul, ol {
   margin: 2em auto;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.6;
+
+  @include breakpoint(md) {
+    font-size: 1.5rem;
+  }
 }
 
 h2 {
   font-family: 'gilroyextrabold';
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   margin: 2em 0 1em;
   color: #3C3F48;
+
+  @include breakpoint(md) {
+    font-size: 2.5rem;
+  }
 }
 
 .ht-linkList {
@@ -158,3 +193,5 @@ a {
     color: darken($accentColor, 10%);
   }
 }
+
+
