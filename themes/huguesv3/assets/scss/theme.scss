@@ -2,7 +2,6 @@
 
 @import 'variables';
 
-
 //// Breakpoints
 // Usage : @include breakpoint(xs)
 $breakpoints: (
@@ -20,19 +19,6 @@ $breakpoints: (
 			@content;
 		}
 	}
-}
-
-@font-face {
-  font-family: 'geomanistblack';
-  src: url('/fonts/Geomanist-Black-Webfont/geomanist-black-webfont.eot');
-  src: url('/fonts/Geomanist-Black-Webfont/geomanist-black-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/Geomanist-Black-Webfont/geomanist-black-webfont.woff2') format('woff2'),
-       url('/fonts/Geomanist-Black-Webfont/geomanist-black-webfont.woff') format('woff'),
-       url('/fonts/Geomanist-Black-Webfont/geomanist-black-webfont.ttf') format('truetype'),
-       url('/fonts/Geomanist-Black-Webfont/geomanist-black-webfont.svg#geomanistregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
 }
 
 @font-face {
@@ -61,6 +47,7 @@ h1 {
   text-align: center;
   color: #000;
   margin: 4rem 0;
+
   span {
     color: #000;
     -webkit-text-fill-color: white;
@@ -75,6 +62,7 @@ h2 {
   text-align: center;
   color: #000;
   margin: 4rem 0 2rem 0;
+
   @include breakpoint(md) {
     font-size: 6.5rem;
   }
@@ -85,6 +73,7 @@ h3 {
   font-size: 2.5rem;
   color: #000;
   margin: 3rem 0 2rem 0;
+
   sup {
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
@@ -107,6 +96,7 @@ main {
 
 a {
   color: #001FFF;
+
   &:hover {
     text-decoration: none;
   }
@@ -136,10 +126,12 @@ a {
   display: block;
   margin-top: 0.5rem;
   font-size: 0.85em;
+
   img {
     width: 1.5em;
     vertical-align: middle;
   }
+
   a {
     display: inline-block;
     margin-left: 0.4rem;
@@ -154,6 +146,7 @@ footer {
   font-size: 1.2rem;
   background-color: #000;
   margin-top: 6rem;
+
   a {
     color: #fff;
   }
