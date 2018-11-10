@@ -16,23 +16,8 @@
 <body class="ht-grid{{ if .Params.type }} ht-{{ .Params.type }}-template {{ end }}">
 
   <header>
-    <nav class="ht-mainNav">
-      <ul>
-        <li><a href="/">ht {{ if .Params.type }} / {{ .Params.type }} {{ end }}</a></li>
-      </ul>
-    </nav>
+    <h1>Hugues Tennier <br /><span>UX Dev</span></h1>
   </header>
-
-  <h1>{{ if isset .Params "title" }}
-    {{ .Title }}
-    <ul class="ht-article__tags">
-      <li>{{ range .Params.tags }} #{{ . }} {{ end }} &mdash; {{ .Date.Format "January 2, 2006" }} </a></li>
-    </ul>
-    {{else}}
-    Hugues Tennier <br />front-end dev
-    {{ end }}</h1>
-
-  <div class="ht-article-template__background"></div>
 
   <main>
     {{ block "main" . -}}{{- end }}
