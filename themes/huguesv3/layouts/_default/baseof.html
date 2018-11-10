@@ -11,7 +11,9 @@
     <header>
       <h1>Hugues Tennier <br /><span>UX Dev</span></h1>
     </header>
-    <main>{{ block "main" . -}}{{ -end }}</main>
+    <main>
+      {{ block "main" . -}}{{- end }}
+    </main>
     <footer>
       <p>
         &copy; 2018 &mdash; Built using
