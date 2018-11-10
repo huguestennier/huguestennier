@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-      Hugues Tennier &mdash; UX Developer</title>
-    <link rel="stylesheet" href="/css/theme.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hugues Tennier &mdash; UX Developer</title>
+    <link rel="stylesheet" href="/css/theme.css" />
   </head>
   <body>
     <header>
       <h1>Hugues Tennier <br /><span>UX Dev</span></h1>
     </header>
-    <main>
-      {{ block "main" . -}}{{- end }}
-    </main>
+    <main>{{ block "main" . -}}{{ -end }}</main>
     <footer>
-      <p>&copy; 2018 &mdash; Built using <a href="https://github.com/huguestennier/hugues" target="_blank" rel="noopener" aria-describedby="a11y-new-window">Hugues</a>
-        and hosted on <a href="https://netlify.com" target="_blank" rel="noopener" aria-describedby="a11y-new-window">Netlify</a>.</p>
+      <p>
+        &copy; 2018 &mdash; Built using
+        <a
+          href="https://github.com/huguestennier/hugues"
+          target="_blank"
+          rel="noopener"
+          aria-describedby="a11y-new-window"
+          >Hugues</a
+        >
+        and hosted on
+        <a
+          href="https://netlify.com"
+          target="_blank"
+          rel="noopener"
+          aria-describedby="a11y-new-window"
+          >Netlify</a
+        >.
+      </p>
     </footer>
     <div hidden>
       <div id="a11y-new-window">External site. Opens in a new window.</div>
