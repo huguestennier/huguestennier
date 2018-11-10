@@ -2,25 +2,6 @@
 
 @import 'variables';
 
-//// Breakpoints
-// Usage : @include breakpoint(xs)
-$breakpoints: (
-	xs: 480px,
-	sm: 768px,
-	md: 1024px,
-	lg: 1200px,
-);
-
-// Get breakpoint function
-// Usage - @include breakpoint(xs) { ... }
-@mixin breakpoint($breakpoint) {
-	@if map-has-key($breakpoints, $breakpoint) {
-		@media (min-width: #{map-get($breakpoints, $breakpoint)}) {
-			@content;
-		}
-	}
-}
-
 @font-face {
   font-family: 'geomanistbold';
   src: url('/fonts/Geomanist-Bold-Webfont/geomanist-bold-webfont.eot');
@@ -34,22 +15,31 @@ $breakpoints: (
 
 }
 
+html {
+  background-color: $mainColor;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #fff;
   font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 
+h1, h2, h3 {
+  font-family: $mainFont;
+  color: $mainColor;
+}
+
 h1 {
-  font-family: 'geomanistbold';
   font-size: 3rem;
   text-align: center;
-  color: #000;
-  margin: 4rem 0;
+  padding: 4rem 0;
+  margin: 0;
 
   span {
-    color: #000;
+    color: $mainColor;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -57,10 +47,8 @@ h1 {
 }
 
 h2 {
-  font-family: 'geomanistbold';
   font-size: 4rem;
   text-align: center;
-  color: #000;
   margin: 4rem 0 2rem 0;
 
   @include breakpoint(md) {
@@ -69,9 +57,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'geomanistbold';
   font-size: 2.5rem;
-  color: #000;
   margin: 3rem 0 2rem 0;
 
   sup {
@@ -95,7 +81,7 @@ main {
 }
 
 a {
-  color: #001FFF;
+  color: $accentColor;
 
   &:hover {
     text-decoration: none;
@@ -105,7 +91,7 @@ a {
 .ht-linkList {
   list-style: none;
   padding-left: 0;
-  color: #262626;
+  color: $mainColor;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20ch, 1fr));
   grid-gap: 1rem;
@@ -147,7 +133,7 @@ footer {
   text-align: center;
   color: #fff;
   font-size: 1.2rem;
-  background-color: #000;
+  background-color: $mainColor;
   margin-top: 6rem;
 
   a {
