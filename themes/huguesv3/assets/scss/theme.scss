@@ -106,6 +106,9 @@ a {
   list-style: none;
   padding-left: 0;
   color: #262626;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20ch, 1fr));
+  grid-gap: 1rem;
 
   a {
     color: #262626;
