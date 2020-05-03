@@ -1,15 +1,18 @@
 {
   "name": "huguestennier",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":
-      "sass --watch themes/huguestennier/src/css:themes/huguestennier/static/css",
-    "build":
-      "sass themes/huguestennier/src/css/theme.scss:themes/huguestennier/static/css/theme.css --style compressed"
+  "repository": "git@github.com:huguestennier/huguestennier.git",
+  "author": "<huguestennier@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
   },
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "start": "eleventy --serve"
+  },
+  "dependencies": {
+    "markdown-it-anchor": "^5.2.7"
+  }
 }
