@@ -42,7 +42,7 @@ Here’s how it would look in the UI:
 
 From there, in our Hugo template, we can loop over our related posts array: 
 
-```go
+```html
 {{ if .Params.relatedposts }}
   {{ range .Params.relatedposts }}
     {{ $title := . }}
@@ -61,7 +61,7 @@ From there, in our Hugo template, we can loop over our related posts array:
 ## Best: Why not both?
 Sometime you just want to write a quick article and not worry too much about related posts or you just want to resurface one post in particular. We can combine both Hugo’s .Related and Netlify CMS relation widget using `.Scratch` to cover all different cases: 
 
-```go
+```html
 <!— This variable will hold our related posts —>
 {{ $related := newScratch }}
 
