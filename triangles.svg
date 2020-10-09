@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="38px" viewBox="0 0 36 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill="#000000" fill-rule="nonzero">
+            <path d="M13.236068,13.236068 L6.61803399,0 L0,13.236068 L13.236068,13.236068 Z M6.61803399,2.23606798 L11.618034,12.236068 L1.61803399,12.236068 L6.61803399,2.23606798 Z" id="Triangle"></path>
+            <path d="M13.236068,37.236068 L6.61803399,24 L0,37.236068 L13.236068,37.236068 Z M6.61803399,26.236068 L11.618034,36.236068 L1.61803399,36.236068 L6.61803399,26.236068 Z" id="Triangle-Copy-35" transform="translate(6.618034, 30.618034) scale(1, -1) translate(-6.618034, -30.618034) "></path>
+            <path d="M35.236068,13.236068 L28.618034,0 L22,13.236068 L35.236068,13.236068 Z M28.618034,2.23606798 L33.618034,12.236068 L23.618034,12.236068 L28.618034,2.23606798 Z" id="Triangle-Copy" transform="translate(28.618034, 6.618034) rotate(-180.000000) translate(-28.618034, -6.618034) "></path>
+            <path d="M35.236068,37.236068 L28.618034,24 L22,37.236068 L35.236068,37.236068 Z M28.618034,26.236068 L33.618034,36.236068 L23.618034,36.236068 L28.618034,26.236068 Z" id="Triangle-Copy-78" transform="translate(28.618034, 30.618034) scale(1, -1) rotate(-180.000000) translate(-28.618034, -30.618034) "></path>
+        </g>
+    </g>
+</svg>

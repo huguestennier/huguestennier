@@ -1,18 +1,15 @@
 {
-  "name": "huguestennier",
+  "name": "canvas-triangle",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "repository": "git@github.com:huguestennier/huguestennier.git",
-  "author": "<huguestennier@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
-  },
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "markdown-it-anchor": "^5.2.7"
+    "@11ty/eleventy": "^0.11.0"
   }
 }
